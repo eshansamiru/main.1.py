@@ -1,12 +1,12 @@
 import telebot 
-import time
+import os
 
 from PIL import Image
 import requests
 from io import BytesIO
 
 
-TOKEN = "5018928138:AAFJkUyiscIj3_BUDoAUY5-FRzEvF5XuGKg"
+TOKEN = "5149814890:AAEygWwKAZU9MY_6DdUixgs527k8fYJqpb8"
 #This is my image link
 IMAGE_LINK = "https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fhello&psig=AOvVaw17eS1mFtOIMsRP-IziFl1F&ust=1640587879107000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCNifmp6lgvUCFQAAAAAdAAAAABAJ"
 bot = telebot.TeleBot(TOKEN)
@@ -47,5 +47,4 @@ def videonet(message):
     vidnet = open("myvideo.mp4", "rb")
     bot.send_video(message.chat.id, vidnet)
 
-if __name__ == '__main__':
-    bot.polling(none_stop=True)
+bot polling()
