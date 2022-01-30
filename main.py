@@ -1,5 +1,5 @@
-import telebot 
 import os
+import telebot
 
 from PIL import Image
 import requests
