@@ -47,4 +47,4 @@ def videonet(message):
     vidnet = open("myvideo.mp4", "rb")
     bot.send_video(message.chat.id, vidnet)
 
-bot polling()
+bot.polling()
